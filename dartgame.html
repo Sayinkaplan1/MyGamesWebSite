@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<title>Ahmet Emir - Dart Game & Portfolio</title>
+		<style>
+            /* Senin orijinal CSS kodların buraya gelecek (Yukarıda paylaştıkların) */
+            html, body, #canvas { margin: 0; padding: 0; border: 0; }
+            body { color: white; background-color: black; overflow-y: auto !important; touch-action: auto !important; }
+            #canvas { display: block; margin: 0 auto; }
+            
+            /* EKLEDİĞİMİZ PORTFOLYO STİLLERİ */
+            .portfolio-section {
+                background: #1a1a1a;
+                color: white;
+                padding: 40px 20px;
+                text-align: center;
+                font-family: sans-serif;
+                border-top: 5px solid #444;
+            }
+            .project-card {
+                background: #333;
+                margin: 20px auto;
+                padding: 15px;
+                border-radius: 8px;
+                max-width: 600px;
+                border-left: 5px solid #007bff;
+            }
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas">Your browser does not support the canvas tag.</canvas>
+
+        <div class="portfolio-section">
+            <h1>Ahmet Emir Sayınkaplan</h1>
+            <p>Kayseri Üniversitesi - Bilgisayar Mühendisliği 2. Sınıf</p>
+            
+            <div class="project-card">
+                <h3>🚀 Teknofest 2026 Projem</h3>
+                <p>Finansal teknolojiler üzerine 5 kişilik ekibimizle geliştirdiğimiz güvenli web platformu.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>🎯 Dart Oyunu</h3>
+                <p>Godot Engine ve C# kullanarak geliştirdiğim bu oyun şu an yukarıda aktif!</p>
+            </div>
+        </div>
+
+		<div id="status">
+			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="DartGame.png" alt="">
+			<progress id="status-progress"></progress>
+			<div id="status-notice"></div>
+		</div>
+
+		<script src="DartGame.js"></script>
+		<script>
+            // Buraya senin yukarıda paylaştığın uzun "const GODOT_CONFIG..." ile başlayan 
+            // ve "setStatusMode('hidden');" ile biten tüm script kodlarını aynen yapıştır.
+		</script>
+	</body>
+</html>
